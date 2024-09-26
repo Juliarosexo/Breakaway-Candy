@@ -36,6 +36,17 @@
             text-align: center;
             margin: 20px 0;
             background-color: white;
+            position: relative;
+        }
+        .best-seller {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background-color: #ffcc00;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-weight: bold;
+            color: #333;
         }
         .order-button, .donate-button, .inquire-button {
             background-color: #ff6f61;
@@ -71,8 +82,18 @@
         .youtube-embed {
             text-align: center;
         }
-        .donate-section, .comment-section {
+        .donate-section, .comment-section, .bulk-order-section {
             margin: 20px 0;
+        }
+        .form-input {
+            margin: 10px 0;
+            padding: 10px;
+            width: 100%;
+            max-width: 400px;
+        }
+        .payment-methods {
+            margin: 20px 0;
+            text-align: center;
         }
     </style>
 </head>
@@ -91,6 +112,7 @@
         <section>
             <h2>Our Products</h2>
             <div class="product">
+                <span class="best-seller">Best Seller</span>
                 <h3>Jailhouse Lollipops</h3>
                 <img src="https://via.placeholder.com/150" alt="Jailhouse Lollipops">
                 <p>$12 for a pack of 4 - These viral lollipops started it all! Perfectly sweet with a touch of nostalgia, they remind you that freedom is just a lick away. Made with love by Fareed, these lollipops are peanut-free and a fan favorite!</p>
@@ -114,6 +136,11 @@
                 <p>$30 - This ultimate box includes a mix of all three delicious products. Taste the freedom that Fareed has fought for every day with this unbeatable combo!</p>
                 <a href="mailto:breakawaycandy@example.com" class="order-button">Order Now</a>
             </div>
+        </section>
+
+        <section class="payment-methods">
+            <h2>We Accept</h2>
+            <p>Apple Pay, Zelle, PayPal, Cash App</p>
         </section>
 
         <section>
@@ -156,16 +183,18 @@
             </form>
         </section>
 
+        <section class="bulk-order-section">
+            <h2>Bulk Orders</h2>
+            <p>If you need bulk orders for parties, events, or special occasions, please fill out the form below:</p>
+            <form action="mailto:breakawaycandy@example.com" method="post">
+                <input type="text" name="name" placeholder="Your Name" class="form-input" required>
+                <input type="email" name="email" placeholder="Your Email" class="form-input" required>
+                <input type="text" name="bulk_order_details" placeholder="Order Details (e.g., quantities, products)" class="form-input" required>
+                <button type="submit" class="order-button">Submit Bulk Order</button>
+            </form>
+        </section>
+
         <section>
             <h2>Buy Fareed's Book</h2>
             <p>Check out Fareed's book for more insights and inspiration on his journey. <a href="https://linktr.ee/ba2ma_fr">Buy Here</a></p>
-            <blockquote>"His mindset and several misconceptions he chose or grew up to believe caused a lot of his downfalls in life..."</blockquote>
-        </section>
-
-        <footer>
-            <p>&copy; 2024 Breakaway Candy. All Rights Reserved.</p>
-            <p>Designed with love to support a mission of hope and freedom.</p>
-        </footer>
-    </div>
-</body>
-</html>
+            <blockquote
