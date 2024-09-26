@@ -3,57 +3,115 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Breakaway Candy</title>
+    <title>Breakaway Candy - Candy So Good, It's Criminal</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #fff5f5;
+            font-family: 'Helvetica', sans-serif;
+            background-color: #fff;
             color: #333;
             margin: 0;
             padding: 0;
         }
         header {
-            background-color: #ff5e5e;
-            color: white;
+            background-color: #000;
+            color: #fff;
             padding: 20px;
             text-align: center;
         }
         h1 {
             font-size: 3em;
             margin: 0;
+            color: #ff0000;
         }
         p.slogan {
             font-style: italic;
             font-size: 1.5em;
+            color: #fff;
         }
         section {
             padding: 20px;
             text-align: center;
+            max-width: 800px;
+            margin: auto;
         }
-        .product {
+        .product, .testimonial, .clothing-item {
             display: inline-block;
             margin: 20px;
-            border: 2px solid #ff5e5e;
+            border: 3px solid #ff0000;
             border-radius: 10px;
             padding: 15px;
-            width: 200px;
+            width: 250px;
+            background-color: #fff;
         }
-        .product img {
+        .product img, .testimonial img, .clothing-item img {
             max-width: 100%;
             border-radius: 8px;
         }
         footer {
-            background-color: #ff5e5e;
+            background-color: #000;
             color: white;
             text-align: center;
             padding: 10px;
-            position: fixed;
+            position: relative;
             bottom: 0;
             width: 100%;
         }
         a {
-            color: white;
+            color: #ff0000;
             text-decoration: none;
+        }
+        h2 {
+            color: #000;
+            font-size: 2em;
+        }
+        .bio {
+            background-color: #f2f2f2;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            text-align: left;
+        }
+        .best-seller {
+            background-color: #ff0000;
+            color: #fff;
+            border-radius: 5px;
+            padding: 10px;
+            margin-top: 10px;
+            display: inline-block;
+        }
+        .comment-section {
+            background-color: #fff;
+            padding: 20px;
+            border: 2px solid #ff0000;
+            border-radius: 10px;
+            text-align: left;
+        }
+        .comment-section h3 {
+            font-size: 1.5em;
+        }
+        .comment-section form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .comment-section input, .comment-section textarea {
+            width: 100%;
+            padding: 10px;
+            border: 2px solid #ff0000;
+            border-radius: 5px;
+        }
+        .comment-section button {
+            padding: 10px;
+            background-color: #000;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            font-size: 1.1em;
+        }
+        .clothing-item h3 {
+            margin-top: 10px;
+            font-size: 1.3em;
+            color: #000;
         }
     </style>
 </head>
@@ -61,45 +119,97 @@
 
     <header>
         <h1>Breakaway Candy</h1>
-        <p class="slogan">"Sweet escapes for sweeter moments"</p>
+        <p class="slogan">"Candy so good, it should be criminal!"</p>
     </header>
 
     <section>
-        <h2>About Breakaway Candy</h2>
-        <p>
-            Welcome to Breakaway Candy, where we specialize in delivering delicious and indulgent treats 
-            to satisfy your sweet cravings. Created with care and attention, we offer candy boxes, bags, 
-            and unique candy mixes to brighten anyone’s day, even from behind the walls. It's all legit and legal, 
-            ensuring that your loved ones can enjoy their favorite candy without any hassle.
-        </p>
+        <h2>Fareed Rays' Story</h2>
+        <div class="bio">
+            <p>
+                Fareed Rays is living proof that even in the darkest circumstances, determination and creativity can light the way. While serving a 20-year sentence, Fareed started making candy from scratch, selling it to fellow inmates. 
+                His candy became so popular that he earned enough money to start his own clothing line, which allowed him to give back to other incarcerated individuals. An author and entrepreneur, Fareed’s mission is to inspire others to never give up, no matter their situation—showing the world that nothing can stop you if you're determined. 
+                Breakaway Candy is a symbol of resilience and hope, proving you can always find a way to make something sweet from a tough situation.
+            </p>
+            <p>Learn more about Fareed Rays’ journey and explore his work:</p>
+            <p><a href="https://linktr.ee/ba2ma_fr?utm_source=linktree_profile_share&ltsid=274af25c-8284-473d-af89-bbfc551b0412" target="_blank">Visit Fareed's Website and Book</a></p>
+        </div>
     </section>
 
     <section>
-        <h2>Our Best-Sellers</h2>
+        <h2>Our Sweet Selections</h2>
 
         <div class="product">
-            <img src="https://example.com/candy1.jpg" alt="Candy Box 1">
-            <h3>Candy Box 1</h3>
-            <p>Includes assorted sweets for every mood. $12.99</p>
+            <img src="https://example.com/jail-lollipops.jpg" alt="Jail House Lollipops">
+            <h3>Jail House Lollipops</h3>
+            <p>A collection of hand-crafted lollipops made with love and resilience. $10.99</p>
         </div>
 
         <div class="product">
-            <img src="https://example.com/candy2.jpg" alt="Candy Box 2">
-            <h3>Candy Box 2</h3>
-            <p>A mixed collection of fruity and sour candies. $15.99</p>
+            <img src="https://example.com/escape-box.jpg" alt="The Great Escape Box">
+            <h3>The Great Escape Box</h3>
+            <p>An assortment of chewy candies and chocolates, a sweet escape from the everyday grind. $14.99</p>
+            <span class="best-seller">Best Seller!</span>
         </div>
 
         <div class="product">
-            <img src="https://example.com/candy3.jpg" alt="Candy Mix Pack">
-            <h3>Breakaway Mix Pack</h3>
-            <p>Our signature mix of chocolates and gummies. $18.99</p>
+            <img src="https://example.com/freedom-mix.jpg" alt="Freedom Mix Pack">
+            <h3>Freedom Mix Pack</h3>
+            <p>Our signature candy mix, representing the freedom to enjoy life's sweetest moments. $18.99</p>
         </div>
     </section>
 
-    <footer>
-        <p>Follow us on Instagram: <a href="https://www.instagram.com/breakawaycandy">breakawaycandy</a></p>
-        <p>&copy; 2024 Breakaway Candy. All rights reserved.</p>
-    </footer>
+    <section>
+        <h2>Customer Testimonials</h2>
 
-</body>
-</html>
+        <div class="testimonial">
+            <img src="https://example.com/customer1.jpg" alt="Customer 1">
+            <p>"Breakaway Candy is amazing! The Jail House Lollipops are so unique and delicious. I love the story behind it too!" - Sarah L.</p>
+        </div>
+
+        <div class="testimonial">
+            <img src="https://example.com/customer2.jpg" alt="Customer 2">
+            <p>"The Great Escape Box is my go-to gift. Every piece of candy is packed with flavor and meaning." - Jake M.</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>Fareed's Clothing Line</h2>
+
+        <div class="clothing-item">
+            <img src="https://example.com/clothing1.jpg" alt="Clothing Item 1">
+            <h3>Freedom Tee - $24.99</h3>
+        </div>
+
+        <div class="clothing-item">
+            <img src="https://example.com/clothing2.jpg" alt="Clothing Item 2">
+            <h3>Resilience Hoodie - $39.99</h3>
+        </div>
+
+        <p>Explore more at <a href="https://linktr.ee/ba2ma_fr?utm_source=linktree_profile_share&ltsid=274af25c-8284-473d-af89-bbfc551b0412" target="_blank">Fareed’s Clothing Line</a></p>
+    </section>
+
+    <section class="comment-section">
+        <h3>Leave a Comment or Donate</h3>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="comment">Comment:</label>
+            <textarea id="comment" name="comment" rows="4" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+        <p>Want to support Fareed's mission? <a href="https://linktr.ee/ba2ma_fr?utm_source=linktree_profile_share&ltsid=274af25c-8284-473d-af89-bbfc551b0412" target="_blank">Donate here</a></p>
+    </section>
+
+    <section>
+        <h2>Buy Fareed's Book</h2>
+        <p>Learn more about Fareed’s story, his challenges, and his victories in his powerful book. Get your copy today:</p>
+        <p><a href="https://linktr.ee/ba2ma_fr?utm_source=linktree_profile_share&ltsid=274af25c-8284-473d-af89-bbfc551b0412" target="_blank">Buy Fareed’s Book</a></p>
+    </section>
+
+    <footer>
+        <p>Follow us on Instagram: <a href="https://www.instagram.com/breakawaycandy" target="_blank">breakaway
