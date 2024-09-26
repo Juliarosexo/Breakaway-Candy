@@ -94,6 +94,55 @@
             border: 1px solid #ddd;
             border-radius: 5px;
         }
+        /* Dropdown Styles */
+        nav {
+            background-color: #6a5acd;
+            padding: 10px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav li {
+            position: relative;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            display: block;
+        }
+        nav a:hover {
+            background-color: #5b4bc0;
+        }
+        nav .dropdown {
+            display: none;
+            position: absolute;
+            background-color: #6a5acd;
+            min-width: 150px;
+            z-index: 1;
+        }
+        nav li:hover .dropdown {
+            display: block;
+        }
+        nav .dropdown a {
+            white-space: nowrap;
+        }
+        @media (max-width: 600px) {
+            .container {
+                width: 95%;
+            }
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            nav .dropdown {
+                min-width: 100%;
+            }
+        }
     </style>
 </head>
 <body>
@@ -102,13 +151,28 @@
         <p>Candy so good it should be criminal!</p>
     </header>
 
+    <nav>
+        <ul>
+            <li><a href="#products">Our Products</a>
+                <div class="dropdown">
+                    <a href="#bulk-orders">Bulk Orders</a>
+                    <a href="#donate">Donate</a>
+                    <a href="#book">Buy Fareed's Book</a>
+                </div>
+            </li>
+            <li><a href="#testimonials">Customer Testimonials</a></li>
+            <li><a href="#story">Watch Fareed's Story</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+
     <div class="container">
         <section>
             <h2>Meet Fareed Ray</h2>
             <p>Fareed is a relentless entrepreneur, devoted father, and visionary CEO of Breakaway Enterprises. An author who has overcome the odds, he discovered his passion for making candy during his journey in prison. With the overwhelming success of his Jailhouse Lollipops, he was able to sustain his clothing line and is now expanding his candy brand, proving that prison walls do not define his future.</p>
         </section>
 
-        <section>
+        <section id="products">
             <h2>Our Products</h2>
             <div class="product">
                 <h3>Jailhouse Lollipops</h3>
@@ -137,7 +201,7 @@
             </div>
         </section>
 
-        <section class="bulk-order-section">
+        <section class="bulk-order-section" id="bulk-orders">
             <h2>Bulk Orders</h2>
             <p>If you're interested in placing a bulk order for parties or events, please fill out the form below:</p>
             <form action="#" method="post">
@@ -162,25 +226,26 @@
             </div>
         </section>
 
-        <section>
+        <section id="testimonials">
             <h2>Customer Testimonials</h2>
-            <blockquote>"The Jailhouse Lollipops were a hit at my party! The kids loved them!" - Sarah J.</blockquote>
+            <blockquote>"The Jailhouse
+                            <blockquote>"The Jailhouse Lollipops were a hit at my party! The kids loved them!" - Sarah J.</blockquote>
             <blockquote>"I ordered the Freedom Box for my friends, and they were amazed by the variety!" - Mike T.</blockquote>
             <blockquote>"I love supporting businesses like this. Fareed's story is inspiring!" - Lisa R.</blockquote>
         </section>
 
-        <section class="youtube-embed">
+        <section class="youtube-embed" id="story">
             <h2>Watch Fareed's Story</h2>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/examplevideo" frameborder="0" allowfullscreen></iframe>
         </section>
 
-        <section class="donate-section">
+        <section class="donate-section" id="donate">
             <h2>Donate Now</h2>
             <p>Part of the proceeds go towards helping incarcerated authors and entrepreneurs. Your contributions help us spread positivity and support those in need.</p>
             <a href="https://www.yourdonationlink.com" class="donate-button">Donate Now</a>
         </section>
 
-        <section class="comment-section">
+        <section class="comment-section" id="contact">
             <h2>Leave a Comment or Reach Out</h2>
             <form action="#" method="post">
                 <input type="text" name="comment" placeholder="Your Comment" class="form-input" required>
@@ -188,7 +253,7 @@
             </form>
         </section>
 
-        <section>
+        <section id="book">
             <h2>Buy Fareed's Book</h2>
             <p>Check out Fareed's book for more insights and inspiration on his journey. <a href="https://linktr.ee/ba2ma_fr">Buy Here</a></p>
             <blockquote>"Fareed's story shows that anything is possible with determination and hard work!" - Book Reviewer</blockquote>
@@ -196,4 +261,9 @@
     </div>
 
     <footer>
-        <p>&copy; 2024 Breakaway Candy. All Rights Reserved.</
+        <p>&copy; 2024 Breakaway Candy. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
+
+                
