@@ -94,19 +94,19 @@
             border: 1px solid #ddd;
             border-radius: 5px;
         }
-        .faq-question {
-            cursor: pointer;
-            font-weight: bold;
-            margin-bottom: 10px;
-        }
-        .faq-answer {
-            margin-bottom: 20px;
-        }
-        .customer-testimonial {
-            background-color: #f9f9f9;
+        .dropdown-menu {
             padding: 10px;
+            background-color: #6a5acd;
+            color: white;
             border-radius: 5px;
-            margin-bottom: 20px;
+        }
+        .dropdown-menu select {
+            padding: 10px;
+            background-color: white;
+            color: #333;
+            border: none;
+            border-radius: 5px;
+            width: 100%;
         }
     </style>
 </head>
@@ -124,29 +124,45 @@
 
         <section>
             <h2>Our Products</h2>
-            <div class="product">
+            <div class="dropdown-menu">
+                <label for="products">Explore Our Products:</label>
+                <select id="products" onchange="window.location=this.value;">
+                    <option value="#">Select a product</option>
+                    <option value="#jailhouse-lollipops">Jailhouse Lollipops</option>
+                    <option value="#confinement-crunch-bars">Confinement Crunch Bars</option>
+                    <option value="#cellmate-sour-gummies">Cellmate Sour Gummies</option>
+                    <option value="#freedom-box">Freedom Box</option>
+                </select>
+            </div>
+            <div id="jailhouse-lollipops" class="product">
                 <h3>Jailhouse Lollipops</h3>
                 <img src="https://via.placeholder.com/150" alt="Jailhouse Lollipops">
                 <div class="best-seller">Best Seller</div>
-                <p>$12 for a pack of 4 - These viral lollipops started it all! Made with love by Fareed, these lollipops are peanut-free and a fan favorite!</p>
+                <p>$12 for a pack of 4 - These viral lollipops started it all! Perfectly sweet with a touch of nostalgia, they remind you that freedom is just a lick away. Made with love by Fareed, these lollipops are peanut-free and a fan favorite!</p>
+                <p><strong>Ingredients:</strong> Sugar, Corn Syrup, Natural Flavors, Food Coloring</p>
+                <p><strong>Nutritional Facts (Per Lollipop):</strong> Calories: 60, Sugar: 12g</p>
                 <a href="mailto:breakawaycandy@example.com" class="order-button">Order Now</a>
             </div>
-            <div class="product">
+            <div id="confinement-crunch-bars" class="product">
                 <h3>Confinement Crunch Bars</h3>
                 <img src="https://via.placeholder.com/150" alt="Confinement Crunch Bars">
-                <p>$10 for a pack of 4 - Delicious chocolate bars packed with flavor and crafted with Fareed's special recipe.</p>
+                <p>$10 for a pack of 4 - Crunch your way to freedom with these delicious chocolate bars. Packed with flavor and crafted with Fareed's special recipe, they’ll keep you coming back for more!</p>
+                <p><strong>Ingredients:</strong> Chocolate, Rice Crisps, Sugar, Cocoa Butter, Milk</p>
+                <p><strong>Nutritional Facts (Per Bar):</strong> Calories: 180, Sugar: 18g</p>
                 <a href="mailto:breakawaycandy@example.com" class="order-button">Order Now</a>
             </div>
-            <div class="product">
+            <div id="cellmate-sour-gummies" class="product">
                 <h3>Cellmate Sour Gummies</h3>
                 <img src="https://via.placeholder.com/150" alt="Cellmate Sour Gummies">
-                <p>$10 for a pack of 4 - Tangy, peanut-free gummies perfect for those who enjoy a sour surprise!</p>
+                <p>$10 for a pack of 4 - These tangy gummies are a little bit cheeky and a whole lot of fun. Perfect for those who enjoy a sour surprise! Fareed’s gummies are also peanut-free!</p>
+                <p><strong>Ingredients:</strong> Sugar, Corn Syrup, Gelatin, Citric Acid, Natural Flavors</p>
+                <p><strong>Nutritional Facts (Per Serving):</strong> Calories: 150, Sugar: 20g</p>
                 <a href="mailto:breakawaycandy@example.com" class="order-button">Order Now</a>
             </div>
-            <div class="product">
+            <div id="freedom-box" class="product">
                 <h3>Freedom Box</h3>
                 <img src="https://via.placeholder.com/150" alt="Freedom Box">
-                <p>$30 - Includes a mix of all three products. Taste the freedom that Fareed has fought for every day with this combo!</p>
+                <p>$30 - This ultimate box includes a mix of all three delicious products. Taste the freedom that Fareed has fought for every day with this unbeatable combo!</p>
                 <a href="mailto:breakawaycandy@example.com" class="order-button">Order Now</a>
             </div>
         </section>
@@ -162,81 +178,73 @@
             </form>
         </section>
 
-        <section>
+        <section id="tag-us">
+            <h2>Tag Us to Be Featured!</h2>
+            <p>Tag us on Instagram @breakaway2makeaway for a chance to be featured in our gallery!</p>
+        </section>
+
+        <section id="testimonials">
             <h2>Customer Testimonials</h2>
-            <div class="customer-testimonial">
-                <blockquote>"The Jailhouse Lollipops were a hit at my party! The kids loved them!" - Sarah J.</blockquote>
-            </div>
-            <div class="customer-testimonial">
-                <blockquote>"I ordered the Freedom Box for my friends, and they were amazed by the variety!" - Mike T.</blockquote>
-            </div>
-            <div class="customer-testimonial">
-                <blockquote>"I love supporting businesses like this. Fareed's story is inspiring!" - Lisa R.</blockquote>
-            </div>
+            <blockquote>"The Jailhouse Lollipops were a hit at my party! The kids loved them!" - Sarah J.</blockquote>
+            <blockquote>"I ordered the Freedom Box for my friends, and they were amazed by the variety!" - Mike T.</blockquote>
+            <blockquote>"I love supporting businesses like this. Fareed's story is inspiring!" - Lisa R.</blockquote>
         </section>
 
-        <section>
-            <h2>FAQ</h2>
-            <div>
-                <div class="faq-question">What are the payment options available?</div>
-                <div class="faq-answer">
-                    <p>We accept Apple Pay, Zelle, PayPal, and Cash App.</p>
-                </div>
-
-                <div class="faq-question">Can I customize my order?</div>
-                <div class="faq-answer">
-                    <p>Yes, we can accommodate custom orders for bulk purchases. Please fill out the bulk order form with your specific requests.</p>
-                </div>
-            </div>
-        </section>
-
-        <section>
-            <h2>Newsletter Sign-Up</h2>
-            <p>Stay updated on promotions, new products, and exciting stories by signing up for our newsletter!</p>
-            <form action="#" method="post">
-                <input type="email" name="newsletter_email" placeholder="Your Email" class="form-input" required>
-                <button type="submit" class="order-button">Sign Up</button>
-            </form>
-        </section>
-
-        <section>
-            <h2>Buy Fareed's Book</h2>
-            <p>Check out Fareed's book for more insights and inspiration on his journey. <a href="https://linktr.ee/ba2ma_fr">Buy Here</a></p>
-        </section>
-
-        <section id="contact">
-            <h2>Contact Us</h2>
-            <p>If you have any questions or would like to reach out, please use the contact form below:</p>
-            <form action="#" method="post">
-                <input type="text" name="contact_name" placeholder="Your Name" class="form-input" required>
-                <input type="email" name="contact_email" placeholder="Your Email" class="form-input" required>
-                <textarea name="contact                 <textarea name="contact_message" placeholder="Your Message" class="form-input" required></textarea>
-                <button type="submit" class="order-button">Send Message</button>
-            </form>
-        </section>
-
-        <section>
-            <h2>Follow Us on Social Media</h2>
-            <p>Stay connected with us! Follow us for the latest updates, promotions, and new product launches:</p>
+        <section id="social-media">
+            <h2>Connect with Us on Social Media</h2>
+            <p>Follow us to stay updated on the latest products and stories. You can also buy Fareed Ray's book and clothing line through the links below:</p>
             <div class="social-links">
-                <a href="https://www.instagram.com/breakaway2makeaway" target="_blank">Instagram</a> |
-                <a href="https://www.facebook.com/BreakawayCandy" target="_blank">Facebook</a> |
-                <a href="https://twitter.com/BreakawayCandy" target="_blank">Twitter</a>
+                <a href="https://www.instagram.com/breakaway2makeaway" target="_blank">Instagram</a>
+                <a href="https://www.twitter.com/breakaway2makeaway" target="_blank">Twitter</a>
+                <a href="https://www.facebook.com/breakaway2makeaway" target="_blank">Facebook</a>
+                <a href="https://www.breakawaycandy.com/buy-book" target="_blank">Buy Fareed's Book</a>
+                <a href="https://www.breakawayclothing.com" target="_blank">Breakaway Clothing Line</a>
             </div>
         </section>
 
-        <section>
-            <h2>Live Chat Support</h2>
-            <p>Need help? Chat with us live using our support button below:</p>
-            <button onclick="alert('Connecting to live support...')" class="order-button">Live Chat Support</button>
+        <section class="comment-section">
+            <h2>Customer Blog</h2>
+            <p>Share your story, your journey, or a fun recipe with us! We're all about building a supportive community. You can inspire others by commenting below:</p>
+            <form action="#" method="post">
+                <textarea name="customer_story" class="form-input" placeholder="Write your story or recipe here..." rows="5" required></textarea>
+                <button type="submit" class="order-button">Submit Your Story</button>
+            </form>
         </section>
+
+        <section id="faq">
+            <h2>Frequently Asked Questions</h2>
+            <ul>
+                <li><strong>How do I place an order?</strong> - You can place an order directly from the product section above by clicking the "Order Now" button, or email us for bulk orders.</li>
+                <li><strong>What payment methods do you accept?</strong> - We accept Zelle, PayPal, Apple Pay, and CashApp.</li>
+                <li><strong>Can I order in bulk for events?</strong> - Yes, fill out the bulk order form, and we will contact you with details.</li>
+                <li><strong>How long does shipping take?</strong> - Shipping typically takes 3-5 business days.</li>
+            </ul>
+        </section>
+
+        <section id="newsletter">
+            <h2>Sign Up for Our Newsletter</h2>
+            <p>Subscribe to our newsletter to get updates on promotions, new products, and Fareed's inspiring journey!</p>
+            <form action="#" method="post">
+                <input type="email" name="email" placeholder="Your Email Address" class="form-input" required>
+                <button type="submit" class="order-button">Subscribe</button>
+            </form>
+        </section>
+
+        <section id="live-chat">
+            <h2>Live Chat Support</h2>
+            <p>Need help or have any questions? Use our live chat support below to get real-time assistance from our team.</p>
+            <button class="order-button" onclick="startChat()">Start Live Chat</button>
+        </section>
+
+        <footer>
+            <p>&copy; 2024 Breakaway Candy | Candy that Inspires Change</p>
+        </footer>
     </div>
 
-    <footer>
-        <p>&copy; 2024 Breakaway Candy | All Rights Reserved</p>
-        <p>Designed by [Your Company Name]</p>
-    </footer>
-
+    <script>
+        function startChat() {
+            alert("Live Chat Support is coming soon!");
+        }
+    </script>
 </body>
 </html>
-
