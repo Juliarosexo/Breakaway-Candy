@@ -6,213 +6,166 @@
     <title>Breakaway Candy</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f9fa;
             margin: 0;
             padding: 0;
-            background-color: #f0f8ff; /* Light blue background */
             color: #333;
         }
         header {
-            background-color: #ffcc00; /* Bright yellow for header */
+            background-color: #ff6f61;
             padding: 20px;
             text-align: center;
+            color: white;
         }
         h1 {
-            color: #ff4500; /* Orange for title */
+            margin: 0;
+            font-size: 2.5em;
         }
-        .slogan {
-            font-size: 1.5em;
-            font-style: italic;
-            margin: 10px 0;
+        h2 {
+            color: #ff6f61;
         }
-        section {
-            margin: 20px;
-            padding: 20px;
-            background-color: #ffffff; /* White background for sections */
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        .container {
+            width: 80%;
+            margin: auto;
         }
-        .candy-item {
-            margin-bottom: 20px;
-            text-align: center;
-        }
-        .candy-item img {
-            width: 100px;
-            height: 100px;
-        }
-        .badge {
-            background-color: #ff4500; /* Orange for badge */
-            color: #ffffff;
-            padding: 5px 10px;
+        .product {
+            border: 1px solid #ddd;
             border-radius: 5px;
-            position: absolute;
-            top: 10px;
-            right: 10px;
+            padding: 15px;
+            text-align: center;
+            margin: 20px 0;
+            background-color: white;
         }
         .order-button, .donate-button, .inquire-button {
-            background-color: #ffcc00; /* Bright yellow buttons */
-            color: #333;
+            background-color: #ff6f61;
+            color: white;
             padding: 10px 20px;
-            text-decoration: none;
+            border: none;
             border-radius: 5px;
-            display: inline-block;
-            margin: 5px 0;
+            cursor: pointer;
+            text-decoration: none;
+            font-weight: bold;
         }
-        .social-section a {
-            display: inline-block;
-            margin: 5px;
+        .order-button:hover, .donate-button:hover, .inquire-button:hover {
+            background-color: #ff4c39;
+        }
+        .social-links a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #ff6f61;
         }
         footer {
+            background-color: #333;
+            color: white;
             text-align: center;
-            padding: 20px;
-            background-color: #ffcc00; /* Bright yellow footer */
+            padding: 15px;
             position: relative;
             bottom: 0;
             width: 100%;
         }
-        .highlight {
-            background-color: #ffeb3b; /* Bright highlight for special text */
-            padding: 10px;
-            border-radius: 5px;
-            text-align: center;
+        .tag-us {
             margin: 20px 0;
-        }
-        .clothing-item {
-            margin-bottom: 20px;
             text-align: center;
+        }
+        .youtube-embed {
+            text-align: center;
+        }
+        .donate-section, .comment-section {
+            margin: 20px 0;
         }
     </style>
 </head>
 <body>
-
     <header>
-        <h1>Welcome to Breakaway Candy</h1>
-        <p class="slogan">Candy so good it should be criminal!</p>
+        <h1>Breakaway Candy</h1>
+        <p>Candy so good it should be criminal!</p>
     </header>
 
-    <!-- About Fareed Section -->
-    <section>
-        <h2>Meet Fareed Ray</h2>
-        <p>Fareed Ray is a relentless entrepreneur, devoted father, and visionary CEO of Breakaway Enterprises. He is also an author who has overcome the odds. After starting his journey in prison, he discovered his passion for making candy and quickly turned it into a thriving business. With the overwhelming success of his Jailhouse Lollipops, he was able to sustain his clothing line and is now expanding his candy brand, proving that prison walls do not define his future. Fareed is not stopping anytime soon!</p>
-    </section>
+    <div class="container">
+        <section>
+            <h2>Meet Fareed Ray</h2>
+            <p>Fareed is a relentless entrepreneur, devoted father, and visionary CEO of Breakaway Enterprises. An author who has overcome the odds, he discovered his passion for making candy during his journey in prison. With the overwhelming success of his Jailhouse Lollipops, he was able to sustain his clothing line and is now expanding his candy brand, proving that prison walls do not define his future.</p>
+        </section>
 
-    <!-- Candy Section -->
-    <section>
-        <h2>Our Candy Offerings</h2>
-        
-        <div class="candy-item">
-            <img src="https://via.placeholder.com/100" alt="Jailhouse Lollipops">
-            <div class="badge">Most Popular!</div>
-            <h3>Jailhouse Lollipops</h3>
-            <p><strong>Price:</strong> Pack of 4 for $10</p>
-            <p>These lollipops aren’t just candy; they’re a phenomenon! Created by Fareed during his journey behind bars, these viral sensations have captured the attention of candy lovers everywhere. Each colorful pop is a reminder of the creativity and resilience found even within confinement. Sweet, bold, and made with a passion for freedom, they are perfect for anyone looking to indulge in a treat that carries a powerful story.</p>
-            <a href="mailto:fareed@breakawaycandy.com?subject=Order Jailhouse Lollipops" class="order-button">Order Now</a>
-        </div>
+        <section>
+            <h2>Our Products</h2>
+            <div class="product">
+                <h3>Jailhouse Lollipops</h3>
+                <img src="https://via.placeholder.com/150" alt="Jailhouse Lollipops">
+                <p>$12 for a pack of 4 - These viral lollipops started it all! Perfectly sweet with a touch of nostalgia, they remind you that freedom is just a lick away. Made with love by Fareed, these lollipops are peanut-free and a fan favorite!</p>
+                <a href="mailto:breakawaycandy@example.com" class="order-button">Order Now</a>
+            </div>
+            <div class="product">
+                <h3>Confinement Crunch Bars</h3>
+                <img src="https://via.placeholder.com/150" alt="Confinement Crunch Bars">
+                <p>$10 for a pack of 4 - Crunch your way to freedom with these delicious chocolate bars. Packed with flavor and crafted with Fareed's special recipe, they’ll keep you coming back for more!</p>
+                <a href="mailto:breakawaycandy@example.com" class="order-button">Order Now</a>
+            </div>
+            <div class="product">
+                <h3>Cellmate Sour Gummies</h3>
+                <img src="https://via.placeholder.com/150" alt="Cellmate Sour Gummies">
+                <p>$10 for a pack of 4 - These tangy gummies are a little bit cheeky and a whole lot of fun. Perfect for those who enjoy a sour surprise! Fareed’s gummies are also peanut-free!</p>
+                <a href="mailto:breakawaycandy@example.com" class="order-button">Order Now</a>
+            </div>
+            <div class="product">
+                <h3>Freedom Box</h3>
+                <img src="https://via.placeholder.com/150" alt="Freedom Box">
+                <p>$30 - This ultimate box includes a mix of all three delicious products. Taste the freedom that Fareed has fought for every day with this unbeatable combo!</p>
+                <a href="mailto:breakawaycandy@example.com" class="order-button">Order Now</a>
+            </div>
+        </section>
 
-        <div class="candy-item">
-            <img src="https://via.placeholder.com/100" alt="Confinement Crunch Bars">
-            <h3>Confinement Crunch Bars</h3>
-            <p><strong>Price:</strong> Pack of 4 for $12</p>
-            <p>Experience the crunch that breaks free from the ordinary! Fareed’s Confinement Crunch Bars are made with crispy rice and rich chocolate, embodying the strength to overcome obstacles. Each bite is a reminder that even in confinement, the spirit of innovation thrives.</p>
-            <a href="mailto:fareed@breakawaycandy.com?subject=Order Confinement Crunch Bars" class="order-button">Order Now</a>
-        </div>
+        <section>
+            <h2>Tag Us!</h2>
+            <p>Tag us on Instagram @breakaway2makeaway for a chance to be featured!</p>
+            <div class="tag-us">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="https://linktr.ee/ba2ma_fr">Linktree</a>
+                    <a href="https://instagram.com/breakaway2makeaway">Instagram</a>
+                    <a href="https://facebook.com/breakawaycandy">Facebook</a>
+                    <a href="https://twitter.com/breakawaycandy">Twitter</a>
+                </div>
+            </div>
+        </section>
 
-        <div class="candy-item">
-            <img src="https://via.placeholder.com/100" alt="Cellmate Sour Gummies">
-            <h3>Cellmate Sour Gummies</h3>
-            <p><strong>Price:</strong> Pack of 4 for $10</p>
-            <p>Get ready for a sweet and sour adventure with Fareed’s Cellmate Sour Gummies! These chewy treats come in a variety of fruity flavors and are designed to tantalize your taste buds. They remind us that life’s challenges can have a sweet side too.</p>
-            <a href="mailto:fareed@breakawaycandy.com?subject=Order Cellmate Sour Gummies" class="order-button">Order Now</a>
-        </div>
+        <section>
+            <h2>Customer Testimonials</h2>
+            <blockquote>"The Jailhouse Lollipops were a hit at my party! The kids loved them!" - Sarah J.</blockquote>
+            <blockquote>"I ordered the Freedom Box for my friends, and they were amazed by the variety!" - Mike T.</blockquote>
+            <blockquote>"I love supporting businesses like this. Fareed's story is inspiring!" - Lisa R.</blockquote>
+        </section>
 
-        <div class="candy-item">
-            <h3>Freedom Box</h3>
-            <p><strong>Price:</strong> $30</p>
-            <p>Indulge in the ultimate candy experience with our Freedom Box! This mixed box includes a pack of Jailhouse Lollipops, Confinement Crunch Bars, and Cellmate Sour Gummies, bringing together the best of Fareed's creations. It’s the perfect gift for candy lovers who appreciate a sweet story!</p>
-            <a href="mailto:fareed@breakawaycandy.com?subject=Order Freedom Box" class="order-button">Order Now</a>
-        </div>
-    </section>
+        <section class="youtube-embed">
+            <h2>Watch Fareed's Story</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/examplevideo" frameborder="0" allowfullscreen></iframe>
+        </section>
 
-    <!-- Clothing Line Section -->
-    <section>
-        <h2>Breakaway Clothing Line</h2>
-        <div class="clothing-item">
-            <h3>Freedom Tees</h3>
-            <p>Price: $25</p>
-            <p>Show your support with our stylish Freedom Tees! Made from soft, high-quality cotton, these shirts symbolize resilience and hope.</p>
-            <a href="mailto:fareed@breakawaycandy.com?subject=Order Freedom Tees" class="order-button">Order Now</a>
-        </div>
-        <div class="clothing-item">
-            <h3>Empowerment Hoodies</h3>
-            <p>Price: $40</p>
-            <p>Stay warm and look great in our Empowerment Hoodies. Featuring a comfortable fit, these hoodies remind us to rise above challenges.</p>
-            <a href="mailto:fareed@breakawaycandy.com?subject=Order Empowerment Hoodies" class="order-button">Order Now</a>
-        </div>
-    </section>
-
-    <!-- Book Section -->
-    <section>
-        <h2>Buy Fareed's Book</h2>
-        <div class="highlight">
-            <h3>Snippet from the Book</h3>
-            <p>"His mindset and several misconceptions he chose or grew up to believe caused a lot of his downfalls in life. But with determination and a desire to right his wrongs, Fareed has transformed his life and is helping others do the same."</p>
-            <a href="https://linktr.ee/ba2ma_fr" class="order-button">Buy the Book Here</a>
-        </div>
-    </section>
-
-    <!-- Customer Testimonials Section -->
-    <section>
-        <h2>What Our Customers Are Saying</h2>
-        <div class="testimonial-item testimonial">
-            <blockquote>"The Jailhouse Lollipops were a hit at my party! The kids loved them, and I appreciate that they're peanut-free." - Sarah J.</blockquote>
-        </div>
-        <div class="testimonial-item testimonial">
-            <blockquote>"I ordered the Freedom Box for my friends, and they were amazed by the variety! Such a great concept." - Mike T.</blockquote>
-        </div>
-        <div class="testimonial-item testimonial">
-            <blockquote>"I love supporting businesses like this. Fareed's story is inspiring, and the candy is delicious!" - Lisa R.</blockquote>
-        </div>
-       </section>
-
-    <!-- Social Media and Donation Section -->
-    <section class="social-section">
-        <h2>Connect with Us</h2>
-        <p>Follow us on social media for updates and special offers:</p>
-        <a href="https://instagram.com/breakaway2makeaway" class="order-button">Instagram</a>
-        <a href="https://facebook.com/breakawaycandy" class="order-button">Facebook</a>
-        <a href="https://twitter.com/breakawaycandy" class="order-button">Twitter</a>
-        <a href="https://linktr.ee/ba2ma_fr" class="order-button">Linktree</a>
-        <div style="margin-top: 20px;">
-            <h3>Tag Us to Be Featured</h3>
-            <p>Share your candy photos with us using #BreakawayCandy and tag us for a chance to be featured on our page!</p>
-        </div>
-        <div style="margin-top: 20px;">
-            <h3>Donate Now</h3>
-            <p>Your contributions help us support incarcerated authors and entrepreneurs. Part of the proceeds goes toward initiatives that create opportunities for those who need it most. Thank you for your generosity!</p>
+        <section class="donate-section">
+            <h2>Donate Now</h2>
+            <p>Part of the proceeds go towards helping incarcerated authors and entrepreneurs. Your contributions help us spread positivity and support those in need.</p>
             <a href="https://www.yourdonationlink.com" class="donate-button">Donate Now</a>
-        </div>
-        <div style="margin-top: 20px;">
-            <h3>Leave a Comment or Reach Out</h3>
+        </section>
+
+        <section class="comment-section">
+            <h2>Leave a Comment or Reach Out</h2>
             <form action="#" method="post">
                 <input type="text" name="comment" placeholder="Your Comment" class="form-input" required>
                 <button type="submit" class="inquire-button">Send</button>
             </form>
-        </div>
-    </section>
+        </section>
 
-    <!-- Bulk Orders Section -->
-    <section class="bulk-orders-section">
-        <h2>Bulk Orders</h2>
-        <p>Interested in ordering candy in bulk for an event or party? Contact us for special pricing and arrangements.</p>
-        <a href="mailto:fareed@breakawaycandy.com?subject=Bulk Order Inquiry" class="order-button">Contact Us for Bulk Orders</a>
-    </section>
+        <section>
+            <h2>Buy Fareed's Book</h2>
+            <p>Check out Fareed's book for more insights and inspiration on his journey. <a href="https://linktr.ee/ba2ma_fr">Buy Here</a></p>
+            <blockquote>"His mindset and several misconceptions he chose or grew up to believe caused a lot of his downfalls in life..."</blockquote>
+        </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <p>&copy; 2024 Breakaway Candy. All Rights Reserved.</p>
-        <p>Designed with love to support a mission of hope and freedom. We accept Cash App, Zelle, Apple Pay, PayPal, Visa, and Mastercard.</p>
-    </footer>
-
+        <footer>
+            <p>&copy; 2024 Breakaway Candy. All Rights Reserved.</p>
+            <p>Designed with love to support a mission of hope and freedom.</p>
+        </footer>
+    </div>
 </body>
 </html>
-
