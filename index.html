@@ -94,33 +94,35 @@
             border: 1px solid #ddd;
             border-radius: 5px;
         }
-        .faq-question {
-            font-weight: bold;
-            cursor: pointer;
-            margin: 10px 0;
+        /* Dropdown Menu Styles */
+        nav {
+            background-color: #6a5acd;
+            padding: 10px;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 5px 10px;
+            transition: background-color 0.3s;
+        }
+        nav ul li a:hover {
+            background-color: #5b4bc0;
+            border-radius: 5px;
         }
         .faq-answer {
             display: none;
-            margin: 0 0 10px 20px;
-        }
-        .newsletter-section {
-            text-align: center;
-            margin: 20px 0;
-        }
-        /* Dropdown styles */
-        .nav {
-            display: flex;
-            justify-content: center;
-            background-color: #6a5acd;
-            padding: 10px 0;
-        }
-        .nav select {
+            margin: 10px 0;
             padding: 10px;
-            border: none;
+            border: 1px solid #ddd;
             border-radius: 5px;
-            background-color: #fff;
-            color: #6a5acd;
-            cursor: pointer;
         }
     </style>
 </head>
@@ -130,22 +132,18 @@
         <p>Candy so good it should be criminal!</p>
     </header>
 
-    <div class="nav">
-        <select onchange="location = this.value;">
-            <option value="#">Select a Section</option>
-            <option value="#meet-fareed">Meet Fareed</option>
-            <option value="#products">Our Products</option>
-            <option value="#bulk-orders">Bulk Orders</option>
-            <option value="#blog">Blog</option>
-            <option value="#faq">FAQ</option>
-            <option value="#live-chat">Live Chat Support</option>
-            <option value="#donate">Donate</option>
-            <option value="#contact">Contact</option>
-        </select>
-    </div>
+    <nav>
+        <ul>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#bulk-orders">Bulk Orders</a></li>
+            <li><a href="#donate">Donate</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
 
     <div class="container">
-        <section id="meet-fareed">
+        <section>
             <h2>Meet Fareed Ray</h2>
             <p>Fareed is a relentless entrepreneur, devoted father, and visionary CEO of Breakaway Enterprises. An author who has overcome the odds, he discovered his passion for making candy during his journey in prison. With the overwhelming success of his Jailhouse Lollipops, he was able to sustain his clothing line and is now expanding his candy brand, proving that prison walls do not define his future.</p>
         </section>
@@ -157,25 +155,29 @@
                 <img src="https://via.placeholder.com/150" alt="Jailhouse Lollipops">
                 <div class="best-seller">Best Seller</div>
                 <p>$12 for a pack of 4 - These viral lollipops started it all! Perfectly sweet with a touch of nostalgia, they remind you that freedom is just a lick away. Made with love by Fareed, these lollipops are peanut-free and a fan favorite!</p>
-                <button class="order-button">Order Now</button>
+                <p>Ingredients: Sugar, Corn Syrup, Flavoring, Coloring. Nutritional Facts: 50 calories per lollipop.</p>
+                <a href="mailto:breakawaycandy@example.com" class="order-button">Order Now</a>
             </div>
             <div class="product">
                 <h3>Confinement Crunch Bars</h3>
                 <img src="https://via.placeholder.com/150" alt="Confinement Crunch Bars">
                 <p>$10 for a pack of 4 - Crunch your way to freedom with these delicious chocolate bars. Packed with flavor and crafted with Fareed's special recipe, they’ll keep you coming back for more!</p>
-                <button class="order-button">Order Now</button>
+                <p>Ingredients: Chocolate, Rice Crisps, Sugar, Milk. Nutritional Facts: 100 calories per bar.</p>
+                <a href="mailto:breakawaycandy@example.com" class="order-button">Order Now</a>
             </div>
             <div class="product">
                 <h3>Cellmate Sour Gummies</h3>
                 <img src="https://via.placeholder.com/150" alt="Cellmate Sour Gummies">
                 <p>$10 for a pack of 4 - These tangy gummies are a little bit cheeky and a whole lot of fun. Perfect for those who enjoy a sour surprise! Fareed’s gummies are also peanut-free!</p>
-                <button class="order-button">Order Now</button>
+                <p>Ingredients: Sugar, Corn Syrup, Citric Acid, Flavoring. Nutritional Facts: 70 calories per pack.</p>
+                <a href="mailto:breakawaycandy@example.com" class="order-button">Order Now</a>
             </div>
             <div class="product">
                 <h3>Freedom Box</h3>
                 <img src="https://via.placeholder.com/150" alt="Freedom Box">
                 <p>$30 - This ultimate box includes a mix of all three delicious products. Taste the freedom that Fareed has fought for every day with this unbeatable combo!</p>
-                <button class="order-button">Order Now</button>
+                <p>Ingredients: Mixed contents from Jailhouse Lollipops, Confinement Crunch Bars, and Cellmate Sour Gummies.</p>
+                <a href="mailto:breakawaycandy@example.com" class="order-button">Order Now</a>
             </div>
         </section>
 
@@ -190,84 +192,69 @@
             </form>
         </section>
 
-        <section id="blog">
-            <h2>Blog</h2>
-            <p>Share your stories, updates, and recipes related to your journey! <button class="order-button">Submit Your Story</button></p>
-            <blockquote>"I started making candy for my family, and it changed my life!" - Community Member</blockquote>
-        </section>
-
         <section id="faq">
             <h2>Frequently Asked Questions</h2>
-            <div class="faq-question">What are the shipping options?</div>
-            <div class="faq-answer">We offer standard and expedited shipping. You can choose your preference at checkout.</div>
-            <div class="faq-question">How do I place a bulk order?</div>
-            <div class="faq-answer">Please fill out the bulk order form above with your details and we'll get back to you shortly!</div>
-            <div class="faq-question">Are your products allergen-free?</div>
-            <div class="faq-answer">Yes, our products are peanut-free. Please check individual product descriptions for specific allergens.</div>
+            <div class="faq-question">
+                <h3>What are the shipping options?</h3>
+                <div class="faq-answer">
+                    <p>We offer standard and expedited shipping options. Please check our shipping policy for more details.</p>
+                </div>
+            </div>
+            <div class="faq-question">
+                <h3>Do you accept returns?</h3>
+                <div class="faq-answer">
+                    <p>Due to the nature of our products, we do not accept returns. However, please contact us if there are any issues with your order.</p>
+                </div>
+            </div>
+            <div class="faq-question">
+                <h3>Can I customize my order?</h3>
+                <div class="faq-answer">
+                    <p>Yes, we can accommodate custom orders for bulk purchases. Please fill out the bulk order form with your specific requests.</p>
+                </div>
+            </div>
         </section>
 
-        <section id="live-chat">
-            <h2>Live Chat Support</h2>
-            <p>If you need immediate assistance, feel free to chat with us!</p>
-            <button class="order-button">Chat Now</button>
-        </section>
-
-        <section class="newsletter-section">
-            <h2>Sign Up for Our Newsletter</h2>
-                       <p>Stay updated with our latest products, promotions, and stories!</p>
+        <section>
+            <h2>Newsletter Sign-Up</h2>
+            <p>Stay updated on promotions, new products, and exciting stories by signing up for our newsletter!</p>
             <form action="#" method="post">
                 <input type="email" name="newsletter_email" placeholder="Your Email" class="form-input" required>
                 <button type="submit" class="order-button">Sign Up</button>
             </form>
         </section>
 
-        <section id="donate">
-            <h2>Support Us</h2>
-            <p>Your contributions help us continue our mission of providing hope and inspiration. Donate today!</p>
-            <button class="donate-button">Donate Now</button>
-        </section>
-
         <section id="contact">
             <h2>Contact Us</h2>
-            <p>We would love to hear from you! Reach out with any questions or comments.</p>
+            <p>If you have any questions or would like to reach out, please use the contact form below:</p>
             <form action="#" method="post">
                 <input type="text" name="contact_name" placeholder="Your Name" class="form-input" required>
                 <input type="email" name="contact_email" placeholder="Your Email" class="form-input" required>
-                <textarea name="message" placeholder="Your Message" class="form-input" rows="4" required></textarea>
-                <button type="submit" class="inquire-button">Send Message</button>
+                <textarea name="contact_message" placeholder="Your Message" rows="4" class="form-input" required></textarea>
+                <button type="submit" class="order-button">Send Message</button>
             </form>
         </section>
 
-        <div class="tag-us">
-            <h2>Tag Us!</h2>
-            <p>Follow us on social media and tag us in your photos for a chance to be featured!</p>
-            <div class="social-links">
-                <a href="https://instagram.com" target="_blank">Instagram</a>
-                <a href="https://facebook.com" target="_blank">Facebook</a>
-                <a href="https://twitter.com" target="_blank">Twitter</a>
-            </div>
-        </div>
-
-        <div class="youtube-embed">
-            <h2>Watch Us!</h2>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/YOUR_VIDEO_ID" frameborder="0" allowfullscreen></iframe>
-        </div>
+        <section class="live-chat">
+            <h2>Live Chat Support</h2>
+            <p>Need immediate assistance? Click below to chat with us live!</p>
+            <a href="#" class="order-button">Chat Now</a>
+        </section>
     </div>
 
     <footer>
-        <p>&copy; 2024 Breakaway Candy. All Rights Reserved.</p>
-        <p>Payment Methods: <a href="#">Zelle</a>, <a href="#">PayPal</a>, <a href="#">Apple Pay</a></p>
+        <p>&copy; 2024 Breakaway Candy. All rights reserved.</p>
+        <div class="social-links">
+            <a href="https://instagram.com/breakaway2makeaway">Instagram</a>
+            <a href="https://twitter.com/breakawaycandy">Twitter</a>
+            <a href="https://facebook.com/breakawaycandy">Facebook</a>
+        </div>
+        <div class="tag-us">
+            <p>Tag us on social media with #BreakawayCandy!</p>
+        </div>
+        <div class="youtube-embed">
+            <h3>Watch Our Story</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/example" frameborder="0" allowfullscreen></iframe>
+        </div>
     </footer>
-
-    <script>
-        const faqQuestions = document.querySelectorAll('.faq-question');
-        faqQuestions.forEach(question => {
-            question.addEventListener('click', () => {
-                const answer = question.nextElementSibling;
-                answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
-            });
-        });
-    </script>
 </body>
 </html>
-
