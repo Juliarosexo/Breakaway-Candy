@@ -31,58 +31,6 @@
             width: 80%;
             margin: auto;
         }
-        .nav {
-            background-color: #6a5acd;
-            overflow: hidden;
-            display: flex;
-            justify-content: center;
-        }
-        .nav a, .dropdown-content a {
-            float: left;
-            color: white;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-        }
-        .nav a:hover, .dropdown-content a:hover {
-            background-color: #5b4bc0;
-        }
-        .dropdown {
-            float: left;
-            overflow: hidden;
-        }
-        .dropdown .dropbtn {
-            cursor: pointer;
-            padding: 14px 16px;
-            border: none;
-            outline: none;
-            color: white;
-            background-color: inherit;
-            font-family: inherit;
-            font-size: 16px;
-            margin: 0;
-        }
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: #f9f9f9;
-            min-width: 160px;
-            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-            z-index: 1;
-        }
-        .dropdown-content a {
-            color: black;
-            padding: 12px 16px;
-            text-decoration: none;
-            display: block;
-            text-align: left;
-        }
-        .dropdown-content a:hover {
-            background-color: #ddd;
-        }
-        .dropdown:hover .dropdown-content {
-            display: block;
-        }
         .product {
             border: 1px solid #ddd;
             border-radius: 5px;
@@ -147,13 +95,32 @@
             border-radius: 5px;
         }
         .faq-question {
+            font-weight: bold;
             cursor: pointer;
             margin: 10px 0;
-            font-weight: bold;
         }
         .faq-answer {
             display: none;
-            margin: 10px 0;
+            margin: 0 0 10px 20px;
+        }
+        .newsletter-section {
+            text-align: center;
+            margin: 20px 0;
+        }
+        /* Dropdown styles */
+        .nav {
+            display: flex;
+            justify-content: center;
+            background-color: #6a5acd;
+            padding: 10px 0;
+        }
+        .nav select {
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #fff;
+            color: #6a5acd;
+            cursor: pointer;
         }
     </style>
 </head>
@@ -164,63 +131,55 @@
     </header>
 
     <div class="nav">
-        <a href="#about">About</a>
-        <div class="dropdown">
-            <button class="dropbtn">Products</button>
-            <div class="dropdown-content">
-                <a href="#jailhouse-lollipops">Jailhouse Lollipops</a>
-                <a href="#confinement-crunch">Confinement Crunch Bars</a>
-                <a href="#cellmate-gummies">Cellmate Sour Gummies</a>
-                <a href="#freedom-box">Freedom Box</a>
-                <a href="#bulk-orders">Bulk Orders</a>
-            </div>
-        </div>
-        <a href="#blog">Blog</a>
-        <a href="#faq">FAQ</a>
-        <a href="#contact">Contact</a>
-        <a href="#donate">Donate</a>
+        <select onchange="location = this.value;">
+            <option value="#">Select a Section</option>
+            <option value="#meet-fareed">Meet Fareed</option>
+            <option value="#products">Our Products</option>
+            <option value="#bulk-orders">Bulk Orders</option>
+            <option value="#blog">Blog</option>
+            <option value="#faq">FAQ</option>
+            <option value="#live-chat">Live Chat Support</option>
+            <option value="#donate">Donate</option>
+            <option value="#contact">Contact</option>
+        </select>
     </div>
 
     <div class="container">
-        <section id="about">
+        <section id="meet-fareed">
             <h2>Meet Fareed Ray</h2>
             <p>Fareed is a relentless entrepreneur, devoted father, and visionary CEO of Breakaway Enterprises. An author who has overcome the odds, he discovered his passion for making candy during his journey in prison. With the overwhelming success of his Jailhouse Lollipops, he was able to sustain his clothing line and is now expanding his candy brand, proving that prison walls do not define his future.</p>
         </section>
 
         <section id="products">
             <h2>Our Products</h2>
-            <div class="product" id="jailhouse-lollipops">
+            <div class="product">
                 <h3>Jailhouse Lollipops</h3>
                 <img src="https://via.placeholder.com/150" alt="Jailhouse Lollipops">
                 <div class="best-seller">Best Seller</div>
                 <p>$12 for a pack of 4 - These viral lollipops started it all! Perfectly sweet with a touch of nostalgia, they remind you that freedom is just a lick away. Made with love by Fareed, these lollipops are peanut-free and a fan favorite!</p>
-                <p><strong>Ingredients:</strong> Sugar, Corn Syrup, Citric Acid, Natural Flavors, Colors. <strong>Nutritional Facts:</strong> 50 calories per lollipop.</p>
-                <a href="mailto:breakawaycandy@example.com" class="order-button">Order Now</a>
+                <button class="order-button">Order Now</button>
             </div>
-            <div class="product" id="confinement-crunch">
+            <div class="product">
                 <h3>Confinement Crunch Bars</h3>
                 <img src="https://via.placeholder.com/150" alt="Confinement Crunch Bars">
                 <p>$10 for a pack of 4 - Crunch your way to freedom with these delicious chocolate bars. Packed with flavor and crafted with Fareed's special recipe, they’ll keep you coming back for more!</p>
-                <p><strong>Ingredients:</strong> Chocolate, Rice Crisps, Sugar, Cocoa Butter. <strong>Nutritional Facts:</strong> 150 calories per bar.</p>
-                <a href="mailto:breakawaycandy@example.com" class="order-button">Order Now</a>
+                <button class="order-button">Order Now</button>
             </div>
-            <div class="product" id="cellmate-gummies">
+            <div class="product">
                 <h3>Cellmate Sour Gummies</h3>
                 <img src="https://via.placeholder.com/150" alt="Cellmate Sour Gummies">
                 <p>$10 for a pack of 4 - These tangy gummies are a little bit cheeky and a whole lot of fun. Perfect for those who enjoy a sour surprise! Fareed’s gummies are also peanut-free!</p>
-                <p><strong>Ingredients:</strong> Sugar, Gelatin, Citric Acid, Natural Flavors, Colors. <strong>Nutritional Facts:</strong> 70 calories per serving (4 gummies).</p>
-                <a href="mailto:breakawaycandy@example.com" class="order-button">Order Now</a>
+                <button class="order-button">Order Now</button>
             </div>
-            <div class="product" id="freedom-box">
+            <div class="product">
                 <h3>Freedom Box</h3>
                 <img src="https://via.placeholder.com/150" alt="Freedom Box">
                 <p>$30 - This ultimate box includes a mix of all three delicious products. Taste the freedom that Fareed has fought for every day with this unbeatable combo!</p>
-                <a href="mailto:breakawaycandy@example.com" class="order-button">Order Now</a>
+                <button class="order-button">Order Now</button>
             </div>
         </section>
 
-        <section class="bulk-order-section" id="bulk
-                    <section class="bulk-order-section" id="bulk-orders">
+        <section class="bulk-order-section" id="bulk-orders">
             <h2>Bulk Orders</h2>
             <p>If you're interested in placing a bulk order for parties or events, please fill out the form below:</p>
             <form action="#" method="post">
@@ -233,7 +192,7 @@
 
         <section id="blog">
             <h2>Blog</h2>
-            <p>Share your stories, updates, and recipes related to your journey! <a href="mailto:breakawaycandy@example.com" class="order-button">Submit Your Story</a></p>
+            <p>Share your stories, updates, and recipes related to your journey! <button class="order-button">Submit Your Story</button></p>
             <blockquote>"I started making candy for my family, and it changed my life!" - Community Member</blockquote>
         </section>
 
@@ -255,75 +214,60 @@
 
         <section class="newsletter-section">
             <h2>Sign Up for Our Newsletter</h2>
-            <p>Stay updated with our latest promotions and stories by signing up!</p>
+                       <p>Stay updated with our latest products, promotions, and stories!</p>
             <form action="#" method="post">
                 <input type="email" name="newsletter_email" placeholder="Your Email" class="form-input" required>
                 <button type="submit" class="order-button">Sign Up</button>
             </form>
         </section>
 
-        <section id="payment-options">
-            <h2>Payment Options</h2>
-            <p>We accept the following payment methods:</p>
-            <ul>
-                <li>PayPal</li>
-                <li>Apple Pay</li>
-                <li>Zelle</li>
-                <li>Credit/Debit Cards</li>
-            </ul>
+        <section id="donate">
+            <h2>Support Us</h2>
+            <p>Your contributions help us continue our mission of providing hope and inspiration. Donate today!</p>
+            <button class="donate-button">Donate Now</button>
         </section>
 
-        <section>
-            <h2>Tag Us!</h2>
-            <p>Tag us on Instagram @breakaway2makeaway for a chance to be featured!</p>
-            <div class="tag-us">
-                <h3>Follow Us</h3>
-                <div class="social-links">
-                    <a href="https://linktr.ee/ba2ma_fr">Linktree</a>
-                    <a href="https://instagram.com/breakaway2makeaway">Instagram</a>
-                    <a href="https://facebook.com/breakawaycandy">Facebook</a>
-                    <a href="https://twitter.com/breakawaycandy">Twitter</a>
-                </div>
-            </div>
-        </section>
-
-        <section>
-            <h2>Customer Testimonials</h2>
-            <blockquote>"The Jailhouse Lollipops were a hit at my party! The kids loved them!" - Sarah J.</blockquote>
-            <blockquote>"I ordered the Freedom Box for my friends, and they were amazed by the variety!" - Mike T.</blockquote>
-            <blockquote>"I love supporting businesses like this. Fareed's story is inspiring!" - Lisa R.</blockquote>
-        </section>
-
-        <section class="youtube-embed">
-            <h2>Watch Fareed's Story</h2>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/examplevideo" frameborder="0" allowfullscreen></iframe>
-        </section>
-
-        <section class="donate-section" id="donate">
-            <h2>Donate Now</h2>
-            <p>Part of the proceeds go towards helping incarcerated authors and entrepreneurs. Your contributions help us spread positivity and support those in need.</p>
-            <a href="https://www.yourdonationlink.com" class="donate-button">Donate Now</a>
-        </section>
-
-        <section class="comment-section" id="contact">
-            <h2>Leave a Comment or Reach Out</h2>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>We would love to hear from you! Reach out with any questions or comments.</p>
             <form action="#" method="post">
-                <input type="text" name="comment" placeholder="Your Comment" class="form-input" required>
-                <button type="submit" class="inquire-button">Send</button>
+                <input type="text" name="contact_name" placeholder="Your Name" class="form-input" required>
+                <input type="email" name="contact_email" placeholder="Your Email" class="form-input" required>
+                <textarea name="message" placeholder="Your Message" class="form-input" rows="4" required></textarea>
+                <button type="submit" class="inquire-button">Send Message</button>
             </form>
         </section>
 
-        <section>
-            <h2>Buy Fareed's Book</h2>
-            <p>Check out Fareed's book for more insights and inspiration on his journey. <a href="https://linktr.ee/ba2ma_fr">Buy Here</a></p>
-            <blockquote>"Fareed's story shows that anything is possible with determination and hard work!" - Book Reviewer</blockquote>
-        </section>
+        <div class="tag-us">
+            <h2>Tag Us!</h2>
+            <p>Follow us on social media and tag us in your photos for a chance to be featured!</p>
+            <div class="social-links">
+                <a href="https://instagram.com" target="_blank">Instagram</a>
+                <a href="https://facebook.com" target="_blank">Facebook</a>
+                <a href="https://twitter.com" target="_blank">Twitter</a>
+            </div>
+        </div>
+
+        <div class="youtube-embed">
+            <h2>Watch Us!</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/YOUR_VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+        </div>
     </div>
 
     <footer>
         <p>&copy; 2024 Breakaway Candy. All Rights Reserved.</p>
+        <p>Payment Methods: <a href="#">Zelle</a>, <a href="#">PayPal</a>, <a href="#">Apple Pay</a></p>
     </footer>
+
+    <script>
+        const faqQuestions = document.querySelectorAll('.faq-question');
+        faqQuestions.forEach(question => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+            });
+        });
+    </script>
 </body>
 </html>
 
-            
