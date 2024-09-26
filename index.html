@@ -50,7 +50,7 @@
             border-radius: 5px;
             font-weight: bold;
         }
-        .order-button, .donate-button, .inquire-button {
+        .order-button, .donate-button, .inquire-button, .submit-button {
             background-color: #6a5acd;
             color: white;
             padding: 10px 20px;
@@ -60,7 +60,7 @@
             text-decoration: none;
             font-weight: bold;
         }
-        .order-button:hover, .donate-button:hover, .inquire-button:hover {
+        .order-button:hover, .donate-button:hover, .inquire-button:hover, .submit-button:hover {
             background-color: #5b4bc0;
         }
         .social-links a {
@@ -77,14 +77,14 @@
             bottom: 0;
             width: 100%;
         }
-        .tag-us {
+        .tag-us, .live-chat, .bulk-order-section, .newsletter-section {
             margin: 20px 0;
             text-align: center;
         }
         .youtube-embed {
             text-align: center;
         }
-        .donate-section, .comment-section, .bulk-order-section {
+        .donate-section, .comment-section {
             margin: 20px 0;
         }
         .form-input {
@@ -94,54 +94,19 @@
             border: 1px solid #ddd;
             border-radius: 5px;
         }
-        /* Dropdown Styles */
-        nav {
-            background-color: #6a5acd;
-            padding: 10px;
+        .faq-section {
+            margin: 20px 0;
         }
-        nav ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            display: flex;
-            justify-content: center;
+        .faq-item {
+            margin-bottom: 10px;
         }
-        nav li {
-            position: relative;
+        .faq-question {
+            cursor: pointer;
+            font-weight: bold;
         }
-        nav a {
-            color: white;
-            text-decoration: none;
-            padding: 10px 15px;
-            display: block;
-        }
-        nav a:hover {
-            background-color: #5b4bc0;
-        }
-        nav .dropdown {
+        .faq-answer {
             display: none;
-            position: absolute;
-            background-color: #6a5acd;
-            min-width: 150px;
-            z-index: 1;
-        }
-        nav li:hover .dropdown {
-            display: block;
-        }
-        nav .dropdown a {
-            white-space: nowrap;
-        }
-        @media (max-width: 600px) {
-            .container {
-                width: 95%;
-            }
-            nav ul {
-                flex-direction: column;
-                align-items: center;
-            }
-            nav .dropdown {
-                min-width: 100%;
-            }
+            margin-top: 5px;
         }
     </style>
 </head>
@@ -149,22 +114,8 @@
     <header>
         <h1>Breakaway Candy</h1>
         <p>Candy so good it should be criminal!</p>
+        <input type="text" placeholder="Search products..." class="form-input" style="width: 30%; margin-top: 10px;">
     </header>
-
-    <nav>
-        <ul>
-            <li><a href="#products">Our Products</a>
-                <div class="dropdown">
-                    <a href="#bulk-orders">Bulk Orders</a>
-                    <a href="#donate">Donate</a>
-                    <a href="#book">Buy Fareed's Book</a>
-                </div>
-            </li>
-            <li><a href="#testimonials">Customer Testimonials</a></li>
-            <li><a href="#story">Watch Fareed's Story</a></li>
-            <li><a href="#contact">Contact Us</a></li>
-        </ul>
-    </nav>
 
     <div class="container">
         <section>
@@ -172,7 +123,7 @@
             <p>Fareed is a relentless entrepreneur, devoted father, and visionary CEO of Breakaway Enterprises. An author who has overcome the odds, he discovered his passion for making candy during his journey in prison. With the overwhelming success of his Jailhouse Lollipops, he was able to sustain his clothing line and is now expanding his candy brand, proving that prison walls do not define his future.</p>
         </section>
 
-        <section id="products">
+        <section>
             <h2>Our Products</h2>
             <div class="product">
                 <h3>Jailhouse Lollipops</h3>
@@ -201,7 +152,7 @@
             </div>
         </section>
 
-        <section class="bulk-order-section" id="bulk-orders">
+        <section class="bulk-order-section">
             <h2>Bulk Orders</h2>
             <p>If you're interested in placing a bulk order for parties or events, please fill out the form below:</p>
             <form action="#" method="post">
@@ -212,40 +163,69 @@
             </form>
         </section>
 
-        <section>
-            <h2>Tag Us!</h2>
-            <p>Tag us on Instagram @breakaway2makeaway for a chance to be featured!</p>
-            <div class="tag-us">
-                <h3>Follow Us</h3>
-                <div class="social-links">
-                    <a href="https://linktr.ee/ba2ma_fr">Linktree</a>
-                    <a href="https://instagram.com/breakaway2makeaway">Instagram</a>
-                    <a href="https://facebook.com/breakawaycandy">Facebook</a>
-                    <a href="https://twitter.com/breakawaycandy">Twitter</a>
-                </div>
+        <section class="newsletter-section">
+            <h2>Sign Up for Our Newsletter</h2>
+            <p>Get updates, promotions, and stories directly to your inbox!</p>
+            <form action="#" method="post">
+                <input type="email" name="newsletter_email" placeholder="Your Email" class="form-input" required>
+                <button type="submit" class="submit-button">Subscribe</button>
+            </form>
+        </section>
+
+        <section class="live-chat">
+            <h2>Live Chat Support</h2>
+            <p>If you have any questions, feel free to chat with us!</p>
+            <button class="order-button">Chat Now</button> <!-- Placeholder for chat functionality -->
+        </section>
+
+        <section class="faq-section">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-item">
+                <div class="faq-question">What are the ingredients in your products?</div>
+                <div class="faq-answer">Our products are made with high-quality ingredients. For detailed nutritional facts, please refer to the product descriptions.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">Do you ship internationally?</div>
+                <div class="faq-answer">Yes, we do offer international shipping! Please contact us for more details.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">How can I place a bulk order?</div>
+                <div class="faq-answer">You can submit your bulk order request through our bulk order form above.</div>
             </div>
         </section>
 
-        <section id="testimonials">
+        <section class="tag-us">
+            <h2>Tag Us!</h2>
+            <p>Tag us on Instagram @breakaway2makeaway for a chance to be featured!</p>
+            <div class="social-links">
+                <h3>Follow Us</h3>
+                <a href="https://linktr.ee/ba2ma_fr">Linktree</a>
+                <a href="https://instagram.com/breakaway2makeaway
+                                <a href="https://instagram.com/breakaway2makeaway">Instagram</a>
+            <a href="https://facebook.com/breakawaycandy">Facebook</a>
+            <a href="https://twitter.com/breakawaycandy">Twitter</a>
+        </div>
+        </section>
+
+        <section>
             <h2>Customer Testimonials</h2>
-            <blockquote>"The Jailhouse
-                            <blockquote>"The Jailhouse Lollipops were a hit at my party! The kids loved them!" - Sarah J.</blockquote>
+            <blockquote>"The Jailhouse Lollipops were a hit at my party! The kids loved them!" - Sarah J.</blockquote>
             <blockquote>"I ordered the Freedom Box for my friends, and they were amazed by the variety!" - Mike T.</blockquote>
             <blockquote>"I love supporting businesses like this. Fareed's story is inspiring!" - Lisa R.</blockquote>
         </section>
 
-        <section class="youtube-embed" id="story">
+        <section class="youtube-embed">
             <h2>Watch Fareed's Story</h2>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/examplevideo" frameborder="0" allowfullscreen></iframe>
         </section>
 
-        <section class="donate-section" id="donate">
+        <section class="donate-section">
             <h2>Donate Now</h2>
             <p>Part of the proceeds go towards helping incarcerated authors and entrepreneurs. Your contributions help us spread positivity and support those in need.</p>
             <a href="https://www.yourdonationlink.com" class="donate-button">Donate Now</a>
         </section>
 
-        <section class="comment-section" id="contact">
+        <section class="comment-section">
             <h2>Leave a Comment or Reach Out</h2>
             <form action="#" method="post">
                 <input type="text" name="comment" placeholder="Your Comment" class="form-input" required>
@@ -253,7 +233,7 @@
             </form>
         </section>
 
-        <section id="book">
+        <section>
             <h2>Buy Fareed's Book</h2>
             <p>Check out Fareed's book for more insights and inspiration on his journey. <a href="https://linktr.ee/ba2ma_fr">Buy Here</a></p>
             <blockquote>"Fareed's story shows that anything is possible with determination and hard work!" - Book Reviewer</blockquote>
@@ -263,7 +243,17 @@
     <footer>
         <p>&copy; 2024 Breakaway Candy. All Rights Reserved.</p>
     </footer>
+
+    <script>
+        // FAQ toggle functionality
+        document.querySelectorAll('.faq-question').forEach(item => {
+            item.addEventListener('click', () => {
+                const answer = item.nextElementSibling;
+                answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+            });
+        });
+    </script>
 </body>
 </html>
 
-                
+                    
