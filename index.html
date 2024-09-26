@@ -7,13 +7,13 @@
     <style>
         body {
             font-family: 'Arial', sans-serif;
-            background-color: #f0f8ff;
+            background-color: #e0f7fa;
             margin: 0;
             padding: 0;
             color: #333;
         }
         header {
-            background-color: #004d40;
+            background-color: #00796b;
             color: #fff;
             padding: 20px;
             text-align: center;
@@ -34,7 +34,7 @@
             box-shadow: 0 2px 10px rgba(0,0,0,0.1);
         }
         h2, h3 {
-            color: #00796b;
+            color: #004d40;
             text-transform: uppercase;
         }
         .candy-item, .clothing-item, .testimonial-item {
@@ -71,7 +71,7 @@
             height: 315px;
         }
         .footer {
-            background-color: #004d40;
+            background-color: #00796b;
             color: #fff;
             text-align: center;
             padding: 20px;
@@ -86,6 +86,18 @@
             text-align: center;
             margin-top: 20px;
         }
+        .order-form {
+            background-color: #f1f8e9;
+            padding: 20px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .form-input {
+            margin-bottom: 10px;
+            padding: 8px;
+            width: 100%;
+            max-width: 300px;
+        }
     </style>
 </head>
 <body>
@@ -99,7 +111,7 @@
     <!-- About Fareed Ray Section -->
     <section>
         <h2>About Fareed Ray</h2>
-        <p>Fareed Ray is a father, author, and CEO of Breakaway Enterprises. He started making candy from scratch in prison and sold enough to launch his own clothing line, which is now in high demand. Fareed’s journey is a testament to resilience and creativity. Today, he continues to break barriers by sharing his passion for candy, embodying the motto, "Making a way out of no way." He has also helped others publish their books and is dedicated to guiding the youth toward positive paths.</p>
+        <p>Meet Fareed Ray: a relentless entrepreneur, devoted father, and visionary CEO of Breakaway Enterprises. After starting his journey in prison, he discovered his passion for making candy and quickly turned it into a thriving business. With the overwhelming success of his Jailhouse Lollipops, he realized he could break down barriers and take his brand to new heights. Fareed embodies the spirit of "Making a way out of no way," proving that prison walls do not define his future.</p>
         <blockquote>“We are often misled by the misconceptions that society places on us, but those misconceptions are the very things that shape us, test our strength, and lead us to true freedom.”</blockquote>
     </section>
 
@@ -109,20 +121,46 @@
         <div class="candy-item">
             <img src="https://example.com/jailhouse-lollipop.jpg" alt="Jailhouse Lollipops">
             <h3>Jailhouse Lollipops</h3>
-            <p>A sweet escape in every lick! Break away from the ordinary with our signature Jailhouse Lollipops.</p>
+            <p>Our signature treat! These lollipops are more than just candy; they're a taste of freedom that sold like hotcakes! Each lick is a reminder that with hard work and determination, anything is possible!</p>
             <a href="#" class="order-button">Order Now</a>
         </div>
         <div class="candy-item">
             <img src="https://example.com/breakaway-bites.jpg" alt="Breakaway Bites">
             <h3>Breakaway Bites</h3>
-            <p>Experience a taste of freedom with every bite. Made with passion, designed to inspire.</p>
+            <p>Experience the joy of breaking free with our Breakaway Bites! Crafted with love, these delicious morsels represent the sweet rewards of perseverance and ambition. Perfect for any occasion!</p>
             <a href="#" class="order-button">Order Now</a>
         </div>
         <div class="candy-item">
             <img src="https://example.com/confection-freedom-box.jpg" alt="Confection Freedom Box">
             <h3>Confection Freedom Box</h3>
-            <p>Celebrate your inner strength with this box of delicious confections, each representing a step toward freedom.</p>
+            <p>A delightful assortment of our best candies, representing the freedom Fareed fought for. Each box tells a story of resilience and triumph. Share the joy of breaking boundaries!</p>
             <a href="#" class="order-button">Order Now</a>
+        </div>
+    </section>
+
+    <!-- Order Form Section -->
+    <section>
+        <h2>Order Your Candy</h2>
+        <div class="order-form">
+            <form action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" class="form-input" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" class="form-input" required>
+                
+                <label for="candy">Select Candy:</label>
+                <select id="candy" name="candy" class="form-input" required>
+                    <option value="lollipops">Jailhouse Lollipops</option>
+                    <option value="breakaway-bites">Breakaway Bites</option>
+                    <option value="freedom-box">Confection Freedom Box</option>
+                </select>
+                
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" name="quantity" class="form-input" min="1" value="1" required>
+                
+                <button type="submit" class="order-button">Submit Order</button>
+            </form>
         </div>
     </section>
 
@@ -170,6 +208,7 @@
         <h2>Share Your Experience!</h2>
         <p>Post a picture and tag us with your candy box! We will repost your photos on our social media!</p>
         <p>Instagram: <strong>@breakaway2makeaway</strong></p>
+        <p>Linktree: <a href="https://linktr.ee/ba2ma_fr" target="_blank">Visit Here</a></p>
     </section>
 
     <!-- YouTube Video Section -->
