@@ -7,16 +7,17 @@
     <style>
         body {
             font-family: 'Arial', sans-serif;
-            background-color: #f4f4f4;
+            background-color: #ffffff;
             margin: 0;
             padding: 0;
             color: #333;
         }
         header {
-            background-color: #3e2723;
+            background-color: #3f51b5; /* Dark Blue */
             color: #fff;
             padding: 20px;
             text-align: center;
+            border-bottom: 5px solid #ff4081; /* Pink */
         }
         header h1 {
             font-size: 2.5em;
@@ -30,11 +31,11 @@
             padding: 20px;
             margin: 20px;
             border-radius: 8px;
-            background-color: #ffffff;
+            background-color: #f8f8f8;
             box-shadow: 0 2px 10px rgba(0,0,0,0.1);
         }
         h2, h3 {
-            color: #b71c1c;
+            color: #d5006d; /* Pink */
             text-transform: uppercase;
         }
         .candy-item, .clothing-item, .testimonial-item {
@@ -47,7 +48,7 @@
         }
         .order-button, .inquire-button, .donate-button {
             display: inline-block;
-            background-color: #b71c1c;
+            background-color: #ff4081; /* Pink */
             color: #fff;
             padding: 10px 20px;
             text-decoration: none;
@@ -57,7 +58,7 @@
         blockquote {
             font-style: italic;
             color: #555;
-            border-left: 4px solid #b71c1c;
+            border-left: 4px solid #3f51b5; /* Dark Blue */
             padding-left: 10px;
             margin: 20px 0;
         }
@@ -71,13 +72,13 @@
             height: 315px;
         }
         .footer {
-            background-color: #3e2723;
+            background-color: #3f51b5; /* Dark Blue */
             color: #fff;
             text-align: center;
             padding: 20px;
         }
         .testimonial {
-            background-color: #ffebee;
+            background-color: #fce4ec;
             padding: 10px;
             border-radius: 5px;
             margin: 10px 0;
@@ -87,7 +88,7 @@
             margin-top: 20px;
         }
         .order-form {
-            background-color: #e0f7fa;
+            background-color: #e8f5e9;
             padding: 20px;
             border-radius: 5px;
             margin: 20px 0;
@@ -99,9 +100,9 @@
             max-width: 300px;
         }
         .best-selling {
-            background-color: #ffccbc;
-            padding: 10px;
-            border-radius: 5px;
+            background-color: #ffe0b2; /* Light Orange */
+            padding: 15px;
+            border-radius: 8px;
             text-align: center;
         }
     </style>
@@ -117,31 +118,51 @@
     <!-- About Fareed Ray Section -->
     <section>
         <h2>About Fareed Ray</h2>
-        <p>Meet Fareed Ray: a relentless entrepreneur, devoted father, author, and CEO of Breakaway Enterprises. After starting his journey in prison, he discovered his passion for making candy and quickly turned it into a thriving business. With the overwhelming success of his Jailhouse Lollipops, he realized he could break down barriers and take his brand to new heights. Fareed embodies the spirit of "Making a way out of no way," proving that prison walls do not define his future. With his candy, clothing line, and published works, Fareed is not stopping anytime soon!</p>
+        <p>Meet Fareed Ray: a relentless entrepreneur, devoted father, author, and visionary CEO of Breakaway Enterprises. With the sales of his Jailhouse Lollipops, he was able to keep his clothing line alive and expand his brand. Fareed embodies the spirit of "Making a way out of no way," proving that prison walls do not define his future.</p>
         <blockquote>“We are often misled by the misconceptions that society places on us, but those misconceptions are the very things that shape us, test our strength, and lead us to true freedom.”</blockquote>
     </section>
 
     <!-- Candy Section -->
     <section>
         <h2>Our Candy</h2>
-        <div class="candy-item best-selling">
-            <h3>Best Selling Box: Jailhouse Lollipops - $19.99</h3>
-            <p>Our signature treat! These lollipops are more than just candy; they're a taste of freedom that sold like hotcakes! Each lick is a reminder that with hard work and determination, anything is possible!</p>
+        <div class="candy-item">
             <img src="https://example.com/jailhouse-lollipop.jpg" alt="Jailhouse Lollipops">
+            <h3>Jailhouse Lollipops - $4.00</h3>
+            <p>Our signature treat! These peanut-free lollipops are more than just candy; they're a taste of freedom that sold like hotcakes! Each lick is a reminder that with hard work and determination, anything is possible!</p>
             <a href="#" class="order-button">Order Now</a>
         </div>
         <div class="candy-item">
-            <h3>Breakaway Bites - $14.99</h3>
-            <p>Experience the joy of breaking free with our Breakaway Bites! Crafted with love, these delicious morsels represent the sweet rewards of perseverance and ambition. Perfect for any occasion!</p>
             <img src="https://example.com/breakaway-bites.jpg" alt="Breakaway Bites">
+            <h3>Breakaway Bites - $6.00</h3>
+            <p>Experience the joy of breaking free with our peanut-free Breakaway Bites! Crafted with love, these delicious morsels represent the sweet rewards of perseverance and ambition. Perfect for any occasion!</p>
             <a href="#" class="order-button">Order Now</a>
         </div>
         <div class="candy-item">
-            <h3>Confection Freedom Box - $24.99</h3>
-            <p>A delightful assortment of our best candies, representing the freedom Fareed fought for. Each box tells a story of resilience and triumph. Share the joy of breaking boundaries!</p>
             <img src="https://example.com/confection-freedom-box.jpg" alt="Confection Freedom Box">
+            <h3>Confection Freedom Box - $12.00</h3>
+            <p>A delightful assortment of our best candies, including:</p>
+            <ul>
+                <li>2 Jailhouse Lollipops</li>
+                <li>4 Breakaway Bites</li>
+                <li>2 Chocolate Prison Bars</li> <!-- Example of a fun, jail-related candy -->
+            </ul>
+            <p>All peanut-free and representing the freedom Fareed fought for. Each box tells a story of resilience and triumph. Share the joy of breaking boundaries!</p>
             <a href="#" class="order-button">Order Now</a>
         </div>
+    </section>
+
+    <!-- Best Selling Box Section -->
+    <section class="best-selling">
+        <h2>Best Selling Box</h2>
+        <h3>The Freedom Box - $20.00</h3>
+        <p>Our best seller! The Freedom Box is packed with a mix of all three types of our popular candies:</p>
+        <ul>
+            <li>2 Jailhouse Lollipops</li>
+            <li>4 Breakaway Bites</li>
+            <li>4 Chocolate Prison Bars</li> <!-- Example of a fun, jail-related candy -->
+        </ul>
+        <p>Each item is peanut-free, embodying the spirit of liberation and hope. Perfect for gifts or treating yourself!</p>
+        <a href="#" class="order-button">Order Now</a>
     </section>
 
     <!-- Order Form Section -->
@@ -159,7 +180,7 @@
                 <select id="candy" name="candy" class="form-input" required>
                     <option value="lollipops">Jailhouse Lollipops</option>
                     <option value="breakaway-bites">Breakaway Bites</option>
-                    <option value="freedom-box">Confection Freedom Box</option>
+                    <option value="freedom-box">Freedom Box</option>
                 </select>
                 
                 <label for="quantity">Quantity:</label>
@@ -174,29 +195,68 @@
     <section>
         <h2>Breakaway Clothing</h2>
         <div class="clothing-item">
-            <h3>Breakaway Hoodie - $39.99</h3>
             <img src="https://example.com/breakaway-hoodie.jpg" alt="Breakaway Hoodie">
+            <h3>Breakaway Hoodie - $39.99</h3>
             <p>This hoodie represents strength and determination.</p>
             <a href="#" class="order-button">Order Now</a>
         </div>
         <div class="clothing-item">
-            <h3>Prison Break Tee - $24.99</h3>
             <img src="https://example.com/prison-break-tee.jpg" alt="Prison Break Tee">
-            <p>The ultimate desire for freedom, in a comfortable tee.</p>
+            <h3>Prison Break Tee - $24.99</h3>
+            <p>The ultimate desire for freedom, in a comfortable tee
+                            </p>
             <a href="#" class="order-button">Order Now</a>
         </div>
     </section>
 
-    <!-- Misconceptions Book Section -->
-    <section>
-        <h2>Fareed’s Book: "The Misconceptions That Mislead Us"</h2>
-        <p>One of Fareed's most powerful quotes from his book:</p>
-        <blockquote>"We are often misled by the misconceptions that society places on us, but those misconceptions are the very things that shape us, test our strength, and lead us to true freedom."</blockquote>
-        <p><a href="https://linktr.ee/ba2ma_fr?utm_source=linktree_profile_share&ltsid=274af25c-8284-473d-af89-bbfc551b0412" target="_blank" class="order-button">Buy His Book Here</a></p>
-    </section>
-
     <!-- Customer Testimonials Section -->
     <section>
-        <h2>Customer Testimonials</h2>
+        <h2>What Our Customers Are Saying</h2>
         <div class="testimonial-item testimonial">
-            <
+            <blockquote>"The Jailhouse Lollipops were a hit at my party! The kids loved them, and I appreciate that they're peanut-free." - Sarah J.</blockquote>
+        </div>
+        <div class="testimonial-item testimonial">
+            <blockquote>"I ordered the Freedom Box for my friends, and they were amazed by the variety! Such a great concept." - Mike T.</blockquote>
+        </div>
+        <div class="testimonial-item testimonial">
+            <blockquote>"I love supporting businesses like this. Fareed's story is inspiring, and the candy is delicious!" - Lisa R.</blockquote>
+        </div>
+    </section>
+
+    <!-- YouTube Embed Section -->
+    <section class="youtube-embed">
+        <h2>Watch Fareed's Story</h2>
+        <iframe src="https://www.youtube.com/embed/examplevideo" frameborder="0" allowfullscreen></iframe>
+    </section>
+
+    <!-- Social Media and Donation Section -->
+    <section class="social-section">
+        <h2>Connect with Us</h2>
+        <p>Follow us on social media for updates and special offers:</p>
+        <a href="https://instagram.com/breakaway2makeaway" class="order-button">Instagram</a>
+        <a href="https://facebook.com/breakawaycandy" class="order-button">Facebook</a>
+        <a href="https://twitter.com/breakawaycandy" class="order-button">Twitter</a>
+        <div style="margin-top: 20px;">
+            <h3>Donate Now</h3>
+            <p>Your contributions help us spread positivity and support those in need. Thank you for your generosity!</p>
+            <a href="https://www.yourdonationlink.com" class="donate-button">Donate Now</a>
+        </div>
+        <div style="margin-top: 20px;">
+            <h3>Leave a Comment or Reach Out</h3>
+            <form action="#" method="post">
+                <input type="text" name="comment" placeholder="Your Comment" class="form-input" required>
+                <button type="submit" class="inquire-button">Send</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 Breakaway Candy. All Rights Reserved.</p>
+        <p>Designed with love to support a mission of hope and freedom.</p>
+    </footer>
+
+</body>
+</html>
+
+                
