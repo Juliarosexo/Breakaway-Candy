@@ -3,245 +3,154 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Breakaway Candy - A Sweet Way to Make a Way</title>
+    <title>Breakaway Candy</title>
     <style>
         body {
             font-family: 'Arial', sans-serif;
-            background-color: #f5f5f5;
-            color: #333;
+            background-color: #f4f4f4;
             margin: 0;
             padding: 0;
+            color: #333;
         }
         header {
-            background-color: #1f1f1f;
+            background-color: #1c1c1e;
             color: #fff;
             padding: 20px;
             text-align: center;
         }
-        h1 {
-            font-size: 3em;
+        header h1 {
+            font-size: 2.5em;
             margin: 0;
-            color: #3498db;
         }
-        p.slogan {
-            font-style: italic;
-            font-size: 1.4em;
-            color: #ecf0f1;
+        header p {
+            font-size: 1.2em;
+            margin-top: 10px;
         }
         section {
-            padding: 30px;
-            text-align: center;
-            max-width: 1100px;
-            margin: auto;
+            padding: 20px;
         }
-        .product, .testimonial, .clothing-item {
-            display: inline-block;
-            margin: 20px;
-            border: 2px solid #3498db;
-            border-radius: 10px;
-            padding: 15px;
-            width: 300px;
-            background-color: #fff;
+        h2, h3 {
+            color: #ff4757;
+            text-transform: uppercase;
         }
-        .product img, .testimonial img, .clothing-item img {
-            max-width: 100%;
-            border-radius: 8px;
+        .candy-item, .clothing-item {
+            margin-bottom: 20px;
         }
-        footer {
-            background-color: #2c3e50;
-            color: white;
+        .candy-item img, .clothing-item img {
+            width: 100%;
+            max-width: 300px;
+        }
+        .highlight {
+            background-color: #ffeaa7;
+            padding: 5px;
+        }
+        .comment-section, .donation-section {
+            margin-top: 40px;
+        }
+        .footer {
+            background-color: #1c1c1e;
+            color: #fff;
             text-align: center;
             padding: 20px;
         }
-        a {
-            color: #3498db;
+        .about-section {
+            background-color: #f9f9f9;
+            padding: 30px;
+            border-left: 5px solid #ff4757;
+        }
+        .about-section blockquote {
+            font-style: italic;
+            color: #555;
+        }
+        .order-button {
+            display: inline-block;
+            background-color: #ff4757;
+            color: #fff;
+            padding: 10px 20px;
             text-decoration: none;
-        }
-        h2 {
-            color: #2c3e50;
-            font-size: 2.5em;
-        }
-        .bio {
-            background-color: #ecf0f1;
-            padding: 20px;
-            border-radius: 10px;
-            margin: 30px 0;
-            text-align: left;
-        }
-        .best-seller {
-            background-color: #2c3e50;
-            color: #fff;
             border-radius: 5px;
-            padding: 10px;
-            margin-top: 10px;
-            display: inline-block;
         }
-        .order-section, .post-pic-section, .testimonial-section {
-            background-color: #fff;
-            padding: 30px;
-            border: 2px solid #3498db;
-            border-radius: 10px;
-            margin: 30px 0;
+        .youtube-embed {
+            text-align: center;
+            margin: 40px 0;
         }
-        .order-section h3, .post-pic-section h3, .testimonial-section h3 {
-            font-size: 1.5em;
-            color: #2c3e50;
-        }
-        .order-section form, .comment-section form {
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-        }
-        .order-section input, .comment-section input, .comment-section textarea {
-            padding: 10px;
-            border: 2px solid #3498db;
-            border-radius: 5px;
-            font-size: 1em;
-        }
-        .order-section button, .comment-section button {
-            padding: 12px;
-            background-color: #2c3e50;
-            color: #fff;
-            border: none;
-            cursor: pointer;
-            font-size: 1.1em;
-        }
-        .product-description, .order-description {
-            text-align: left;
-            margin-top: 10px;
-        }
-        .clothing-item h3 {
-            margin-top: 10px;
-            font-size: 1.4em;
-            color: #2c3e50;
-        }
-        .delivery-info {
-            margin-top: 20px;
-            text-align: left;
+        .youtube-embed iframe {
+            width: 100%;
+            max-width: 560px;
+            height: 315px;
         }
     </style>
 </head>
 <body>
 
+    <!-- Header -->
     <header>
         <h1>Breakaway Candy</h1>
-        <p class="slogan">"Candy so good, it should be criminal!"</p>
+        <p>Candy so good, it should be criminal!</p>
     </header>
 
-    <!-- Fareed Ray's Journey -->
+    <!-- About Fareed Ray Section -->
+    <section class="about-section">
+        <h2>About Fareed Ray</h2>
+        <p>Fareed Ray is a father, author, and CEO of Breakaway Enterprises. His journey has been one of overcoming the misconceptions that shaped his early life, leading to a 21-year prison sentence. As Fareed explains, "His mindset and several misconceptions he chose or grew up to believe caused a lot of his downfalls in life, one of which was a 21-year prison sentence. Then one day, Fareed woke up with a strong desire to right all his wrongs and to help others, especially the youth, change the wrong perceptions we tend to learn all too easily."</p>
+        <p>Today, Fareed is making a way out of no way by helping others publish books, launching his own clothing line, and creating Breakaway Candy as a symbol of freedom and resilience. The journey is only getting started!</p>
+        <blockquote>“We are often misled by the misconceptions that society places on us, but those misconceptions are the very things that shape us, test our strength, and lead us to true freedom.”</blockquote>
+    </section>
+
+    <!-- Candy Section -->
     <section>
-        <h2>Fareed Ray's Journey</h2>
-        <div class="bio">
-            <p>
-                Fareed Ray is a father, author, and CEO of Breakaway Enterprises. Serving a 20-year sentence, Fareed transformed his passion into a mission. By making candy in jail and selling it to inmates, he found a way to support his fellow prisoners, inspire them, and ultimately launched his own clothing line. His journey of turning hardships into sweet success exemplifies the belief of "making a way out of no way."
-            </p>
-            <p>
-                Today, Fareed has published books, launched Breakaway Candy, and is committed to helping others share their stories, just like he has helped fellow inmates publish their works. His journey is far from over, and with every candy sold, every book read, Fareed continues to inspire hope and success.
-            </p>
-            <p><a href="https://linktr.ee/ba2ma_fr?utm_source=linktree_profile_share&ltsid=274af25c-8284-473d-af89-bbfc551b0412" target="_blank">Check out Fareed's Website and More</a></p>
+        <h2>Our Candy</h2>
+        <div class="candy-item">
+            <img src="https://example.com/jailhouse-lollipop.jpg" alt="Jailhouse Lollipops">
+            <h3>Jailhouse Lollipops</h3>
+            <p>A sweet escape in every lick! Break away from the ordinary with our signature Jailhouse Lollipops.</p>
+        </div>
+        <div class="candy-item">
+            <img src="https://example.com/candy2.jpg" alt="Breakaway Bites">
+            <h3>Breakaway Bites</h3>
+            <p>Experience a taste of freedom with every bite. Made with passion, designed to inspire.</p>
+        </div>
+        <div class="candy-item">
+            <img src="https://example.com/candy3.jpg" alt="Confection Freedom Box">
+            <h3>Confection Freedom Box</h3>
+            <p>Celebrate your inner strength with this box of delicious confections, each representing a step toward freedom that Fareed has fought for every day.</p>
         </div>
     </section>
 
-    <!-- Candy Selections -->
+    <!-- Purchase Section -->
     <section>
-        <h2>Sweet Selections</h2>
-
-        <div class="product">
-            <img src="https://example.com/jail-lollipops.jpg" alt="Jail House Lollipops">
-            <h3>Jail House Lollipops</h3>
-            <div class="product-description">
-                <p>Hand-crafted in the heart of a prison kitchen, these lollipops are packed with the sweet taste of determination. A colorful mix of flavors that’ll make you break free from the ordinary. $10.99</p>
-            </div>
-        </div>
-
-        <div class="product">
-            <img src="https://example.com/escape-box.jpg" alt="The Great Escape Box">
-            <h3>The Great Escape Box</h3>
-            <div class="product-description">
-                <p>This box of chewy delights is designed for those who dream of freedom. Each candy represents a step toward breaking away and making your own path. $14.99</p>
-                <span class="best-seller">Best Seller!</span>
-            </div>
-        </div>
-
-        <div class="product">
-            <img src="https://example.com/freedom-mix.jpg" alt="Freedom Mix Pack">
-            <h3>Freedom Mix Pack</h3>
-            <div class="product-description">
-                <p>A candy mix that represents the freedom Fareed has fought for every day. A variety of sweet treats packed with meaning. $18.99</p>
-            </div>
-        </div>
+        <h2>Order Your Candy</h2>
+        <p>All orders ship within 5-7 business days. We deliver nationwide.</p>
+        <a href="#" class="order-button">Order Now</a>
     </section>
 
-    <!-- Customer Testimonials -->
-    <section class="testimonial-section">
-        <h3>What Our Customers Are Saying</h3>
-        <div class="testimonial">
-            <img src="https://example.com/customer1.jpg" alt="Customer 1">
-            <p>"Breakaway Candy is more than just candy. It’s a symbol of hope. Every bite reminds me that even in tough situations, sweetness can shine through."</p>
-            <p>- Sarah P.</p>
-        </div>
-        <div class="testimonial">
-            <img src="https://example.com/customer2.jpg" alt="Customer 2">
-            <p>"The Great Escape Box is my favorite! Love the message behind it and the candy itself is top-notch."</p>
-            <p>- Jordan T.</p>
-        </div>
-    </section>
-
-    <!-- Order Now -->
-    <section class="order-section">
-        <h3>Order Now</h3>
-        <p class="order-description">
-            Want to enjoy a taste of Breakaway Candy? Fill out the form below to inquire about our products. Once your order is processed, we’ll confirm your delivery details and get your candy shipped out!
-        </p>
-        <form>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="order">Your Order:</label>
-            <input type="text" id="order" name="order" placeholder="e.g., Jail House Lollipops x 2" required>
-
-            <button type="submit">Submit Order</button>
-        </form>
-        <div class="delivery-info">
-            <h4>Delivery & Shipping</h4>
-            <p>Orders typically ship within 3-5 business days. For any inquiries, feel free to contact us!</p>
-        </div>
-    </section>
-
-    <!-- Best-Selling Clothing -->
+    <!-- Breakaway Clothing Section -->
     <section>
         <h2>Breakaway Clothing</h2>
         <div class="clothing-item">
             <img src="https://example.com/clothing1.jpg" alt="Breakaway Hoodie">
             <h3>Breakaway Hoodie</h3>
-            <p>This hoodie represents strength and determination. Made for those who aren’t afraid to break free. $39.99</p>
+            <p>This hoodie represents strength and determination. $39.99</p>
         </div>
         <div class="clothing-item">
             <img src="https://example.com/clothing2.jpg" alt="Prison Break Tee">
             <h3>Prison Break Tee</h3>
-            <p>The Prison Break Tee represents the ultimate desire for freedom. Comfortable, stylish, and meaningful. $24.99</p>
+            <p>The ultimate desire for freedom, in a comfortable tee. $24.99</p>
         </div>
     </section>
 
     <!-- Post & Tag Us Section -->
-    <section class="post-pic-section">
+    <section>
         <h3>Post & Tag Us!</h3>
-        <p>
-            We love to see our customers enjoying their Breakaway Candy! Post a picture of your candy box and tag us on Instagram <a href="https://www.instagram.com/breakaway2makeaway" target="_blank">@breakaway2makeaway</a> for a chance to be featured on our page!
-        </p>
+        <p>Share your Breakaway Candy experience! Post a picture of your candy box and tag us on Instagram <a href="https://www.instagram.com/breakaway2makeaway" target="_blank">@breakaway2makeaway</a> for a chance to be featured on our page!</p>
     </section>
 
     <!-- Misconceptions Book Section -->
     <section>
         <h2>Fareed’s Book: "The Misconceptions That Mislead Us"</h2>
         <p>One of Fareed's most powerful quotes from his book:</p>
-        <blockquote>
-            "We are often misled by the misconceptions that society places on us, but those misconceptions are the very things that shape us, test our strength, and lead us to true freedom."
-        </blockquote>
-        <p><a href="https://linktr.ee/ba2ma_fr?utm_source=linktree_profile_share&ltsid=274af25c-8284-473d-af89-bbfc551b0412" target="_blank">Explore Fareed's Books</a></p>
+        <blockquote>"We are often misled by the misconceptions that society places on us, but those misconceptions are the very things that shape us, test our strength, and lead us to true freedom."</blockquote>
+        <p><a href="https://linktr.ee/ba2ma_fr?utm_source=linktree_profile_share&ltsid=274af25c-8284-473d-af89-bbfc551b0412" target="_blank">Buy His Book Here</a></p>
     </section>
 
     <!-- Comment and Donation Section -->
@@ -250,16 +159,20 @@
         <form>
             <label for="comment">Leave a Comment:</label>
             <textarea id="comment" name="comment" rows="4" placeholder="Share your thoughts or support Fareed's mission."></textarea>
-
             <label for="donate">Make a Donation (Optional):</label>
             <input type="text" id="donate" name="donate" placeholder="$ Amount">
-
             <button type="submit">Submit</button>
         </form>
     </section>
 
+    <!-- YouTube Video Section -->
+    <section class="youtube-embed">
+        <h2>Watch Fareed on Make A Way TV</h2>
+        <iframe src="https://www.youtube.com/embed/videoseries?list=PL5C5szRleHM9nn_VAxjDxRaAO9rRdyLTd" frameborder="0" allowfullscreen></iframe>
+    </section>
+
     <!-- Footer -->
-    <footer>
+    <footer class="footer">
         <p>© 2024 Breakaway Enterprises | Built with passion and purpose. <a href="https://linktr.ee/ba2ma_fr" target="_blank">Visit Fareed's Linktree</a></p>
     </footer>
 
